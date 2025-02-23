@@ -1,6 +1,6 @@
-# Projeto de Linguagens de Marcação em Script
+# Projeto de Linguagens de Marcação e Script
 
-Este projeto foi desenvolvido como parte da disciplina de **Linguagens de Marcação em Script**. O objetivo é criar uma versão inicial de um sistema com natureza extensionista, focando no **FRONT-END** utilizando **HTML5**, **CSS3** e **JavaScript**. O JavaScript será utilizado, no máximo, para acessar uma API simples que fornecerá dados para a aplicação. A equipe tem a liberdade de implementar um **BACK-END** caso deseje.
+Este projeto foi desenvolvido como parte da disciplina de **Linguagens de Marcação e Script**. O objetivo é criar uma versão inicial de um sistema com natureza extensionista, focando no **FRONT-END** utilizando **HTML5**, **CSS3** e **JavaScript**. O JavaScript será utilizado, no máximo, para acessar uma API simples que fornecerá dados para a aplicação. A equipe tem a liberdade de implementar um **BACK-END** caso deseje.
 
 ## 👨‍🏫 Professor Responsável
 
