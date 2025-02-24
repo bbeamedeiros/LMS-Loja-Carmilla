@@ -7,13 +7,14 @@
     <title>Loja Carmilla - Moda Alternativa</title>
 
     <style>
+        /* Estilos anteriores mantidos */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background-image: url(img/Morcegos.png)
+            background-image: url(img/Morcegos.png);
         }
 
         header {
@@ -33,7 +34,7 @@
         header .search-bar {
             flex-grow: 1;
             margin: 0 20px;
-            max-width: 400px; /* Largura máxima da barra de pesquisa */
+            max-width: 400px;
         }
 
         header .search-bar input {
@@ -54,14 +55,12 @@
             font-size: 18px;
         }
 
-        /* Faixa vermelha */
         .red-stripe {
             background-color: #E23835;
             height: 10px;
             width: 100%;
         }
 
-        /* Conteúdo principal */
         main {
             flex: 1;
             padding: 20px;
@@ -78,7 +77,6 @@
             background-color: rgb(255, 255, 255);
             border: 1px solid #ccc;
             border-radius: 5px;
-    
         }
 
         .produto {
@@ -123,7 +121,7 @@
         }
 
         .seta:hover {
-            color: #E23835; /* Cor vermelha ao passar o mouse */
+            color: #E23835;
         }
 
         .button {
@@ -133,15 +131,13 @@
             font-family: Poppins;
             border-color: #E23835;
         }
+
         .button:hover {
             cursor: pointer;
             background-color: #180B0B;
-           
         }
+
         .hidden {
-            display: none;
-        }
-        #mensagemNaoEncontrado.hidden {
             display: none;
         }
     </style>
@@ -151,7 +147,7 @@
     <header>
         <div class="logo">
             <a href="CarmilaPrincipal.html">
-            <img src="img/logocarmilla.png" alt="loja carmilla" style="width:167px;height:40px;">
+                <img src="img/logocarmilla.png" alt="loja carmilla" style="width:167px;height:40px;">
             </a>
         </div>
 
@@ -171,28 +167,26 @@
 
     <!-- Conteúdo principal -->
     <main>
-        <!--Camisetas-->
-        <!--data-nome em cada produto para facilitar a filtragem-->
-        <div class="produtos-container">
+        <div class="produtos-container" id="produtosContainer">
             <div class="produto" data-nome="Camiseta Black at Halloween">
                 <img src="img/produto1.jpg" alt="Camiseta Black at Halloween" />
                 <p>Camiseta Black at Halloween</p>
                 <p class="preco">R$70</p>
-                <button class="button"onclick="adicionarAoCarrinho('Camiseta Black at Halloween', 70)">Adicionar ao Carrinho</button>
-        </div>
+                <button class="button" onclick="adicionarAoCarrinho('Camiseta Black at Halloween', 70)">Adicionar ao Carrinho</button>
+            </div>
 
             <div class="produto" data-nome="Camiseta Friday the 13th">
                 <img src="img/produto2.png" alt="Camiseta Friday the 13th" />
                 <p>Camiseta Friday the 13th</p>
                 <p class="preco">R$85</p>
-                <button class="button"onclick="adicionarAoCarrinho('Camiseta Friday the 13th', 85)">Adicionar ao Carrinho</button>
+                <button class="button" onclick="adicionarAoCarrinho('Camiseta Friday the 13th', 85)">Adicionar ao Carrinho</button>
             </div>
 
             <div class="produto" data-nome="Camiseta Jason Voorhees">
                 <img src="img/produto3.png" alt="Camiseta Jason Voorhees" />
                 <p>Camiseta Jason Voorhees</p>
                 <p class="preco">R$75</p>
-                <button class="button"onclick="adicionarAoCarrinho('Camiseta Jason Voorhees', 75)">Adicionar ao Carrinho</button>
+                <button class="button" onclick="adicionarAoCarrinho('Camiseta Jason Voorhees', 75)">Adicionar ao Carrinho</button>
             </div>
 
             <div class="produto" data-nome="Vestido Preto em Veludo">
@@ -202,10 +196,7 @@
                 <button class="button" onclick="adicionarAoCarrinho('Vestido Preto em Veludo', 70)">Adicionar ao Carrinho</button>
             </div>
         </div>
-         <!-- Mensagem de "Produto não encontrado" -->
-         <div id="mensagemNaoEncontrado" class="hidden" style="text-align: center; font-size: 20px; color: red; margin-top: 20px;">
-            Produto não encontrado.
-        </div>
+
         <footer>
             <div class="paginacao">
                 <span class="seta">◄</span>
@@ -213,79 +204,6 @@
                 <span class="seta">►</span>
             </div>
         </footer>
-
-        <!--Acessórios-->
-        <div class="produtos-container">
-            <div class="produto" data-nome="Colar Mariposa">
-                <img src="img/colar 3.jpg" alt="Colar Mariposa" />
-                <p>Colar Mariposa </p>
-                <p class="preco">R$18</p>
-                <button class="button"onclick="adicionarAoCarrinho('Colar Mariposa', 70)">Adicionar ao Carrinho</button>
-        </div>
-
-            <div class="produto" data-nome="Colar espelho com caveira">
-                <img src="img/colar 2.jpg" alt="Colar espelho com caveira" />
-                <p>Colar espelho com caveira</p>
-                <p class="preco">R$15</p>
-                <button class="button"onclick="adicionarAoCarrinho('Colar espelho com caveira', 85)">Adicionar ao Carrinho</button>
-            </div>
-
-            <div class="produto" data-nome="Colar espada">
-                <img src="img/colar.jpg" alt="Colar espada" />
-                <p>Colar espada</p>
-                <p class="preco">R$15</p>
-                <button class="button"onclick="adicionarAoCarrinho('Colar espada', 75)">Adicionar ao Carrinho</button>
-            </div>
-
-            <div class="produto" data-nome="Colar crucifixo">
-                <img src="img/colar 4.jpg" alt="Colar crucifixo" />
-                <p>Colar crucifixo (gema preta)</p>
-                <p class="preco">R$23</p>
-                <button class="button" onclick="adicionarAoCarrinho('Colar crucifixo', 70)">Adicionar ao Carrinho</button>
-            </div>
-        </div>
-        
-        <footer>
-            <div class="paginacao">
-                <span class="seta">◄</span>
-                <p>Página 1 de 1</p>
-                <span class="seta">►</span>
-            </div>
-        </footer>
-
     </main>
-
-    <script>
-        function adicionarAoCarrinho(nome, preco) {
-            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-            carrinho.push({ nome, preco });
-            localStorage.setItem('carrinho', JSON.stringify(carrinho));
-            alert('Produto adicionado ao carrinho!');
-        }
-        function filtrarProdutos() {
-            const termo = document.getElementById('searchInput').value.toLowerCase();
-            const produtos = document.querySelectorAll('.produto');
-            const mensagemNaoEncontrado = document.getElementById('mensagemNaoEncontrado');
-
-            let produtosEncontrados = 0; //Conta os produtos que são encontrados
-
-            produtos.forEach(produto => {
-                const nomeProduto = produto.getAttribute('data-nome').toLowerCase();
-                if (nomeProduto.includes(termo)) {
-                    produto.classList.remove('hidden');
-                    produtosEncontrados++; //Vai incremenetar o contador
-                } else {
-                    produto.classList.add('hidden');
-                }
-            });
-            // Mostra ou esconde a mensagem "Produto não encontrado"
-            if (produtosEncontrados === 0) {
-                 mensagemNaoEncontrado.classList.remove('hidden');
-            } else {
-                mensagemNaoEncontrado.classList.add('hidden');
-            }   
-        }
-    </script>
-    
 </body>
 </html>
