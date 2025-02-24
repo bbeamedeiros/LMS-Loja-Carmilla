@@ -156,6 +156,7 @@
         </div>
 
         <div class="icons">
+            <a href="sobre.html">Sobre</a>
             <a href="carrinho.html">Carrinho</a>
             <a href="login.html">Login</a>
         </div>
@@ -204,28 +205,5 @@
             </div>
         </footer>
     </main>
-
-    <script>
-        function adicionarAoCarrinho(nome, preco) {
-            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-            carrinho.push({ nome, preco });
-            localStorage.setItem('carrinho', JSON.stringify(carrinho));
-            alert('Produto adicionado ao carrinho!');
-        }
-
-        function filtrarProdutos() {
-            const termo = document.getElementById('searchInput').value.toLowerCase();
-            const produtos = document.querySelectorAll('.produto');
-
-            produtos.forEach(produto => {
-                const nomeProduto = produto.getAttribute('data-nome').toLowerCase();
-                if (nomeProduto.includes(termo)) {
-                    produto.classList.remove('hidden');
-                } else {
-                    produto.classList.add('hidden');
-                }
-            });
-        }
-    </script>
 </body>
 </html>

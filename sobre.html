@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url(img/Morcegos.png);
+            color: white;
+        }
+
+        header {
+            background-color: #180B0B;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 167px;
+            height: 40px;
+        }
+
+        header .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            max-width: 400px;
+        }
+
+        header .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        header .icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        header .icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .red-stripe {
+            background-color: #E23835;
+            height: 10px;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+        }
+
+        .text-content {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .text-content h1 {
+            font-size: 32px;
+            color: #E23835;
+            margin-bottom: 15px;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .image-container img {
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="CarmilaPrincipal.html">
+                <img src="img/logocarmilla.png" alt="Loja Carmilla">
+            </a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar produtos...">
+        </div>
+        
+        <div class="icons">
+            <a href="sobre.html">Sobre</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+    <div class="red-stripe"></div>
+    
+    
+    <div class="container">
+        <div class="text-content">
+            <h1>Sobre Carmilla</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed justo interdum, vehicula purus at, gravida nunc. Integer tristique ligula in dui tincidunt, nec vulputate ligula venenatis. Quisque at venenatis ligula, non tempus purus. Aliquam erat volutpat. Ut ultricies purus at libero lacinia, a fermentum neque rhoncus.</p>
+            <p>Integer sagittis tincidunt dui, sit amet varius metus aliquam nec. Nulla facilisi. Morbi nec nulla justo. Suspendisse potenti. Nulla facilisi. Integer malesuada justo et elit vehicula, nec euismod justo ullamcorper. Donec pretium auctor mi, eget dictum erat feugiat sit amet.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/carmilla.png" alt="Imagem da loja Carmilla">
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="CarmilaPrincipal.html" style="color: white; text-decoration: none; font-size: 18px; background-color: #E23835; padding: 10px 20px; border-radius: 5px;">&larr; Voltar para a Loja</a>
+    </div>
+</body>
+</html>
